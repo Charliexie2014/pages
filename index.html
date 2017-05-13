@@ -1,10 +1,55 @@
-百度翻译介绍
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>absolute绝对定位</title>
+ <style type="text/css">
+	.box{
+  width:300px; 
+  border:2px solid red;
+  margin:20px auto;
 
-百度翻译是一项免费的在线翻译服务，支持多个语言对之间的文本和网页翻译，只需输入想要翻译的文本或者网页地址，即可轻松获得对应语言的翻译结果。百度翻译的自动翻译技术是利用海量双语资源，自动学习语言翻译模式并从中智能选择最优译文呈现。
-
-百度翻译依托强大的技术实力，为用户更加方便快速使用翻译工具，提供的主要功能如下： 
-1、自动检测语言：系统根据输入文字自动判断语言并给出相应的翻译结果； 
-2、结果一键复制：一键点击，复制全部翻译结果； 
-3、双语对照查看：用户可以逐词逐句查看原文和译文的对照结果； 
-4、译文TTS发音：用户点击TTS发音按钮获取中文和英文译文的发音。 
-5、翻译结果收藏：用户单击收藏按钮可一键收藏原文译文。
+  }
+  .box .d1{
+  width:100px;
+  height:100px;
+  background-color:red;
+  position:absolute;/*绝对定位元素不占空间高于普通元素*/
+  left:0px;
+  top:0px;
+  
+  }
+  .box .d2{
+  width:100px;
+  height:100px;
+  background-color:blue;
+   
+  
+  }
+  .box .d3{
+  width:100px;
+  height:100px;
+  background-color:yellow;
+  
+  
+  }
+   .box .d4{
+  width:100px;
+  height:100px;
+  background-color:#003300;
+  
+  
+  }
+  
+  </style>
+ </head>
+ <body>
+ <div class="box">
+	 <div class="d1"></div>
+	 <div class="d2"></div>
+	 <div class="d3"></div>
+	 <div class="d4"></div>
+ </div>
+  
+ </body>
+</html>
